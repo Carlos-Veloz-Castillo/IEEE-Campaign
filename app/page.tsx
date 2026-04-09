@@ -14,7 +14,7 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: "blueskies",
-    src: "/images/repair-team.jpg",
+    src: "/IEEE-Campaign/images/repair-team.jpg",
     alt: "Gateway to Blue Skies RepAir team",
     title: "Gateway to Blue Skies: RepAir",
     description:
@@ -30,7 +30,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "risingstars",
-    src: "/images/rising-stars.jpg",
+    src: "/IEEE-Campaign/images/rising-stars.jpg",
     alt: "IEEE Rising Stars R6 Las Vegas",
     title: "IEEE Rising Stars — R6 Las Vegas",
     description:
