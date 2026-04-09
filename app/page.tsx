@@ -80,9 +80,14 @@ export default function CampaignPage() {
     <main className="min-h-screen bg-background">
       {/* Video Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <img
+          src="/IEEE-Campaign/images/IEEE_Candidate_Still_Background.jpg"
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <iframe
-            src="https://www.youtube.com/embed/1rWL4g2lomo?autoplay=1&mute=1&loop=1&playlist=1rWL4g2lomo&controls=0&showinfo=0&modestbranding=1&playsinline=1&rel=0&disablekb=1"
+            src="https://www.youtube.com/embed/0XS-XNJl0uU?autoplay=1&mute=1&loop=1&playlist=0XS-XNJl0uU&controls=0&showinfo=0&modestbranding=1&playsinline=1&rel=0&disablekb=1"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] min-w-[100vw] min-h-[100vh] pointer-events-none"
             allow="autoplay; encrypted-media"
             title="Background video"
