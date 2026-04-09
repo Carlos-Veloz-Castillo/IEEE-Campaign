@@ -78,37 +78,37 @@ export default function CampaignPage() {
 
   return (
     <main className="min-h-screen bg-background">
-      <header className="border-b border-border">
-        <div className="mx-auto max-w-2xl px-6 py-6">
-          <nav className="flex items-center justify-between">
-            <span className="font-semibold text-foreground">Carlos Veloz</span>
-            <div className="flex items-center gap-4">
-              <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
-              <Link href="#gallery" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Gallery</Link>
-              <Link href="#vision" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Vision</Link>
-              <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
-            </div>
-          </nav>
+      {/* Video Hero */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/IEEE-Campaign/images/IEEE_Background.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 text-center px-6 py-20">
+          <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white/30 mx-auto mb-6">
+            <img src="/IEEE-Campaign/images/headshot.jpg" alt="Carlos Veloz" className="w-full h-full object-cover" />
+          </div>
+          <p className="text-sm font-medium text-blue-300 mb-3 tracking-wide uppercase">IEEE Chair Candidate · 2026–2027</p>
+          <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">Carlos Veloz</h1>
+          <p className="text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">
+            Larger events. More funding. Interesting collaborations. Let&apos;s make IEEE at UTA a standout chapter.
+          </p>
+          <div className="flex justify-center gap-6 mt-8">
+            <Link href="#about" className="text-sm text-gray-300 hover:text-white transition-colors">About</Link>
+            <Link href="#gallery" className="text-sm text-gray-300 hover:text-white transition-colors">Gallery</Link>
+            <Link href="#vision" className="text-sm text-gray-300 hover:text-white transition-colors">Vision</Link>
+            <Link href="#contact" className="text-sm text-gray-300 hover:text-white transition-colors">Contact</Link>
+          </div>
         </div>
-      </header>
+      </section>
 
       <article className="mx-auto max-w-2xl px-6 py-12">
-        {/* Hero */}
-        <header className="mb-12">
-          <div className="flex flex-col sm:flex-row gap-6 items-start mb-6">
-            <div className="relative w-32 h-32 shrink-0 rounded-full overflow-hidden border-4 border-primary/20 bg-muted">
-              <img src="/IEEE-Campaign/images/headshot.jpg" alt="Carlos Veloz" className="w-full h-full object-cover" />
-            </div>
-            <div>
-              <p className="text-sm text-primary font-sans font-medium mb-2">IEEE Chair Candidate · 2026–2027</p>
-              <h1 className="text-4xl font-bold text-foreground mb-3 text-balance">Carlos Veloz</h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Larger events. More funding. Interesting collaborations. Let&apos;s make IEEE at UTA a standout chapter.
-              </p>
-            </div>
-          </div>
-        </header>
-
         {/* About */}
         <section id="about" className="mb-12 scroll-mt-8">
           <h2 className="text-2xl font-semibold text-foreground mb-4 pb-2 border-b border-border">About Me</h2>
@@ -168,7 +168,6 @@ export default function CampaignPage() {
                 <p className="text-muted-foreground text-sm">IEEE-HKN Epsilon Mu · UTA</p>
               </div>
             </li>
-           
             <li className="flex gap-4">
               <span className="text-sm font-sans text-muted-foreground w-28 shrink-0">May 2024 – Now</span>
               <div>
@@ -198,7 +197,7 @@ export default function CampaignPage() {
             </p>
 
             <div className="pl-4 border-l-2 border-primary">
-              <h2 className="font-semibold text-foreground mb-2">Flagship Events</h2>
+              <h3 className="font-semibold text-foreground mb-2">Flagship Events</h3>
               <p className="text-muted-foreground">
                 I want IEEE to host large-scale events — starting with a hackathon — that bring visibility to the chapter
                 and give members something real to be part of. The technical societies under IEEE (like GRSS, PES, etc.)
@@ -208,7 +207,7 @@ export default function CampaignPage() {
             </div>
 
             <div className="pl-4 border-l-2 border-primary">
-              <h2 className="font-semibold text-foreground mb-2">Conference Funding</h2>
+              <h3 className="font-semibold text-foreground mb-2">Conference Funding</h3>
               <p className="text-muted-foreground">
                 I went to Rising Stars 2026 in Region 6, Las Vegas. It was one of the best experiences I&apos;ve had in
                 college — networking, learning, and having an amazing time traveling with my friends.
@@ -219,7 +218,7 @@ export default function CampaignPage() {
             </div>
 
             <div className="pl-4 border-l-2 border-primary">
-              <h2 className="font-semibold text-foreground mb-2">Cross-Org Collaborations</h2>
+              <h3 className="font-semibold text-foreground mb-2">Cross-Org Collaborations</h3>
               <p className="text-muted-foreground">
                 Engineers need exposure beyond their own major. Students however want to maintain a sense of community. The way you
                 get both is by hosting collaborative events with other orgs on campus. Our members get to interact with
@@ -237,7 +236,7 @@ export default function CampaignPage() {
               In one year, I went from member to managing a NASA competition team. I helped establish the GRSS election
               process alongside the officer board. Right now I&apos;m designing a workshop under IEEE-HKN where I&apos;ll
               be responsible for 20 scouts. I didn&apos;t wait for a title to start contributing to IEEE. I started 
-              contributing before I had a title — that's not going to change with one.
+              contributing before I had a title — that&apos;s not going to change with one.
             </p>
             <p>
               If elected, I plan to earn it every day. I&apos;m going to
