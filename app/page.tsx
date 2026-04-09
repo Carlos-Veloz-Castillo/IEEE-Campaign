@@ -22,7 +22,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "workshop",
-    src: "/images/scout-workshop.jpg",
+    src: "/IEEE-Campaign/images/scout-workshop.jpg",
     alt: "Nuclear Science Merit Badge workshop",
     title: "Nuclear Science Merit Badge Workshop",
     description:
