@@ -93,16 +93,16 @@ export default function CampaignPage() {
           <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white/30 mx-auto mb-6">
             <img src="/IEEE-Campaign/images/headshot.jpg" alt="Carlos Veloz" className="w-full h-full object-cover" />
           </div>
-          <p className="text-sm font-medium text-blue-300 mb-3 tracking-wide uppercase">IEEE Chair Candidate · 2026–2027</p>
+          <p className="text-lg font-semibold text-blue-300 mb-3 tracking-wide uppercase">IEEE Chair Candidate · 2026–2027</p>
           <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">Carlos Veloz</h1>
           <p className="text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">
             Larger events. More funding. Interesting collaborations. Let&apos;s make IEEE at UTA a standout chapter.
           </p>
           <div className="flex justify-center gap-6 mt-8">
-            <Link href="#about" className="text-sm text-gray-300 hover:text-white transition-colors">About</Link>
-            <Link href="#gallery" className="text-sm text-gray-300 hover:text-white transition-colors">Gallery</Link>
-            <Link href="#vision" className="text-sm text-gray-300 hover:text-white transition-colors">Vision</Link>
-            <Link href="#contact" className="text-sm text-gray-300 hover:text-white transition-colors">Contact</Link>
+            <Link href="#about" className="text-base font-bold text-white hover:text-blue-300 transition-colors">About</Link>
+            <Link href="#gallery" className="text-base font-bold text-white hover:text-blue-300 transition-colors">Gallery</Link>
+            <Link href="#vision" className="text-base font-bold text-white hover:text-blue-300 transition-colors">Vision</Link>
+            <Link href="#contact" className="text-base font-bold text-white hover:text-blue-300 transition-colors">Contact</Link>
           </div>
         </div>
       </section>
