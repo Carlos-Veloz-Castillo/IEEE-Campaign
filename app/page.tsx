@@ -26,7 +26,7 @@ const galleryItems: GalleryItem[] = [
     alt: "Nuclear Science Merit Badge workshop",
     title: "Nuclear Science Merit Badge Workshop",
     description:
-      "Currently coordinating a six-station workshop with IEEE-HKN Epsilon Mu for ~20 Boy Scouts at UTA. Stations include a cloud chamber, Geiger counter lab, half-life dice simulation, and an ESP32-based radiation detector scavenger hunt. Translating nuclear physics into something an 11-year-old can get excited about.",
+      "Currently coordinating a multi station workshop under IEEE-HKN Epsilon Mu for ~20 Boy Scouts at UTA. Stations include a cloud chamber, Geiger counter lab, half-life dice simulation, and an ESP32-based radiation detector scavenger hunt. Translating nuclear physics into something an 11-year-old can get excited about.",
   },
   {
     id: "risingstars",
@@ -65,7 +65,7 @@ function ImageModal({
           <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
         </div>
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
+          <h2 className="text-xl font-semibold text-foreground mb-3">{item.title}</h2>
           <p className="text-muted-foreground leading-relaxed">{item.description}</p>
         </div>
       </div>
@@ -103,7 +103,7 @@ export default function CampaignPage() {
               <p className="text-sm text-primary font-sans font-medium mb-2">IEEE Chair Candidate · 2026–2027</p>
               <h1 className="text-4xl font-bold text-foreground mb-3 text-balance">Carlos Veloz</h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Bigger events. More funding. Real collaborations. Let&apos;s make IEEE the org people actually talk about.
+                Larger events. More funding. Interesting collaborations. Let&apos;s make IEEE at UTA a standout chapter.
               </p>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function CampaignPage() {
             </p>
 
             <div className="pl-4 border-l-2 border-primary">
-              <h3 className="font-semibold text-foreground mb-2">Flagship Events</h3>
+              <h2 className="font-semibold text-foreground mb-2">Flagship Events</h2>
               <p className="text-muted-foreground">
                 I want IEEE to host large-scale events — starting with a hackathon — that bring visibility to the chapter
                 and give members something real to be part of. The technical societies under IEEE (like GRSS, PES, etc.)
@@ -208,7 +208,7 @@ export default function CampaignPage() {
             </div>
 
             <div className="pl-4 border-l-2 border-primary">
-              <h3 className="font-semibold text-foreground mb-2">Conference Funding</h3>
+              <h2 className="font-semibold text-foreground mb-2">Conference Funding</h2>
               <p className="text-muted-foreground">
                 I went to Rising Stars 2026 in Region 6, Las Vegas. It was one of the best experiences I&apos;ve had in
                 college — networking, learning, and having an amazing time traveling with my friends.
@@ -219,7 +219,7 @@ export default function CampaignPage() {
             </div>
 
             <div className="pl-4 border-l-2 border-primary">
-              <h3 className="font-semibold text-foreground mb-2">Cross-Org Collaborations</h3>
+              <h2 className="font-semibold text-foreground mb-2">Cross-Org Collaborations</h2>
               <p className="text-muted-foreground">
                 Engineers need exposure beyond their own major. Students however want to maintain a sense of community. The way you
                 get both is by hosting collaborative events with other orgs on campus. Our members get to interact with
