@@ -97,7 +97,7 @@ export default function CampaignPage() {
         <header className="mb-12">
           <div className="flex flex-col sm:flex-row gap-6 items-start mb-6">
             <div className="relative w-32 h-32 shrink-0 rounded-full overflow-hidden border-4 border-primary/20 bg-muted">
-              <img src="/images/headshot.jpg" alt="Carlos Veloz" className="w-full h-full object-cover" />
+              <img src="/IEEE-Campaign/images/headshot.jpg" alt="Carlos Veloz" className="w-full h-full object-cover" />
             </div>
             <div>
               <p className="text-sm text-primary font-sans font-medium mb-2">IEEE Chair Candidate · 2026–2027</p>
